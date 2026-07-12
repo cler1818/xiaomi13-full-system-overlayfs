@@ -1,0 +1,7 @@
+id=cler1818_full_system_overlayfs
+name=小米13 全系统 OverlayFS 可读写
+version=1.0
+versionCode=100
+author=cler1818
+description=为小米13 Android 14 的主要动态系统分区和 MIUI 嵌套挂载提供 ext4 持久化可读写层；保留 Magisk、固件及虚拟文件系统安全例外。
+

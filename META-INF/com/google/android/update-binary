@@ -1,0 +1,19 @@
+#!/sbin/sh
+
+umask 022
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+
+if [ ! -f /data/adb/magisk/util_functions.sh ]; then
+  echo "*******************************"
+  echo " 需要 Magisk 20.0 或更高版本 "
+  echo "*******************************"
+  exit 1
+fi
+
+. /data/adb/magisk/util_functions.sh
+install_module
+exit 0
+
